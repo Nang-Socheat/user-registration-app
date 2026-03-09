@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md text-center">
+      <h1 class="text-2xl font-bold mb-4">Welcome, {{fullName}}!</h1>
+
+      <img src="{{profilePic}}" alt="Profile Picture"
+        class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+
+      <div class="text-left space-y-2">
+        <p><span class="font-semibold">Email:</span> {{email}}</p>
+        <p><span class="font-semibold">Course Track:</span> {{course}}</p>
+      </div>
+
+      <a href="/register" class="inline-block mt-6 text-blue-600 hover:underline">Register another user</a>
+    </div>
+  </body>
+</html>
